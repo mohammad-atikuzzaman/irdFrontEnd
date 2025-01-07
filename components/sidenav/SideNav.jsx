@@ -4,6 +4,7 @@ import Image from "next/image";
 import searchIcon from "@/public/searchIcon.png";
 import Category from "../categories/Category";
 
+
 const SideNav = () => {
   const [query, setQuery] = useState("");
   const [categories, setCategories] = useState([]);
@@ -32,7 +33,7 @@ const SideNav = () => {
         </div>
       </section>
 
-      <nav className="p-4 overflow-y-auto h-[65vh]">
+      <nav className="p-4 overflow-y-auto h-[65vh] custom-scroll">
         {categories?.map((category) => (
           <Category
             key={category?.id}
