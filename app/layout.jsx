@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
           <Header />
           <main className="flex">
             <SideNav />
-            <div className="min-h-screen overflow-y-auto custom-scroll">{children}</div>
+            <div className="min-h-screen overflow-y-auto custom-scroll mt-4">{children}</div>
             <SettingsBar />
           </main>
         </div>

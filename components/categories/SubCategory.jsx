@@ -30,25 +30,25 @@ const DuaTitle = ({ subcategory }) => {
       <span className="relative -left-1 font-black text-xl text-green-500 pr-2">
         .
       </span>
-      <div className="mt-2">
-        <span className="text-gray-600 text-sm font-semibold">
+      <details className="mt-2">
+        <summary className="text-gray-600 text-sm font-semibold">
           {subcat_name_en}
-        </span>
+        </summary>
         <div className="space-y-2 mt-2">
           {duas?.map((dua, index) => (
             <Link
               href={`#${dua?.dua_id}`}
               key={index}
               className={`block text-sm ml-4 ${
-                activeDua === dua?.dua_id ? "text-green-500" : "text-gray-500"
+                activeDua === dua?.dua_id ? "text-green-600" : "text-gray-500"
               }`} // Apply green text for active dua
               onClick={() => handleDuaClick(dua?.dua_id)} // Set the active dua on click
             >
-              <span className="text-green-500">{">"}</span> {dua?.dua_name_en}
+              <span className="text-green-600">{">"}</span> {dua?.dua_name_en}
             </Link>
           ))}
         </div>
-      </div>
+      </details>
     </div>
   );
 };

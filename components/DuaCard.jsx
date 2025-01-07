@@ -3,6 +3,7 @@ import Audio from "./Audio";
 import Image from "next/image";
 
 import titelImage from "@/public/duaTitelimg.png";
+import IconNavigation from "./IconNavigation";
 
 const DuaCard = ({ post, sl }) => {
   const {
@@ -28,7 +29,10 @@ const DuaCard = ({ post, sl }) => {
     audio,
   } = post;
   return (
-    <article id={dua_id} className="rounded-xl text-sm space-y-4 p-4 m-4 bg-white">
+    <article
+      id={dua_id}
+      className="rounded-xl text-sm space-y-4 p-4 mx-4 mb-4 bg-white"
+    >
       <section className="flex items-center space-x-4">
         <Image src={titelImage} alt="dua image" />
         <h2 className="text-green-500 font-semibold">
@@ -46,9 +50,9 @@ const DuaCard = ({ post, sl }) => {
         <span>{refference_en}</span>
       </p>
       {audio && (
-        <div>
+        <div className="flex items-center justify-between">
           <Audio audio={audio} />
-          <div></div>
+          <IconNavigation />
         </div>
       )}
     </article>
