@@ -31,30 +31,37 @@ const Category = ({ category, activeId, setActiveId }) => {
       }}
       className="rounded-lg mb-4"
     >
-      <Link
-        href={`/dua/${cat_id}`}
-        className={
-          path === `/dua/${cat_id}`
-            ? "bg-gray-200 text-green-500 w-full rounded-lg p-4 flex items-center justify-between"
-            : "w-full rounded-lg p-4 flex items-center justify-between hover:bg-gray-100"
-        }
+      <div
+        onClick={(e) => {
+          e.preventDefault(); // Prevent navigation
+          toggleAccordion();
+        }}
       >
-        <section className="flex items-center gap-2">
-          <Image src={duaIcon} alt="icon" />
-          <section className="text-left">
-            <span className="font-bold leading-3">{cat_name_en}</span>
-            <br />
-            <span className="text-sm text-gray-400">
-              Subcategory {no_of_subcat}
-            </span>
+        <Link
+          href={`/dua/${cat_id}`}
+          className={
+            path === `/dua/${cat_id}`
+              ? "bg-gray-200 text-green-500 w-full rounded-lg p-4 flex items-center justify-between"
+              : "w-full rounded-lg p-4 flex items-center justify-between hover:bg-gray-100"
+          }
+        >
+          <section className="flex items-center gap-2">
+            <Image src={duaIcon} alt="icon" />
+            <section className="text-left">
+              <span className="font-bold leading-3">{cat_name_en}</span>
+              <br />
+              <span className="text-sm text-gray-400">
+                Subcategory {no_of_subcat}
+              </span>
+            </section>
           </section>
-        </section>
-        <p className="border-l pl-2">
-          {no_of_dua}
-          <br />
-          <span className="text-gray-400"> Duas</span>
-        </p>
-      </Link>
+          <p className="border-l pl-2">
+            {no_of_dua}
+            <br />
+            <span className="text-gray-400"> Duas</span>
+          </p>
+        </Link>
+      </div>
 
       {isOpen && <SubCategories catId={cat_id} />}
     </div>
