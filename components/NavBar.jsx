@@ -19,7 +19,7 @@ const NavBar = () => {
               alt="Home"
               width={30}
               height={30}
-              className="w-[35px]"
+              className="w-[30px]"
             />
           </li>
           <li>
@@ -28,7 +28,7 @@ const NavBar = () => {
               alt="menu"
               width={30}
               height={30}
-              className="w-[35px]"
+              className="w-[30px]"
             />
           </li>
           <li>
@@ -37,7 +37,7 @@ const NavBar = () => {
               alt="Memorize"
               width={30}
               height={30}
-              className="w-[35px]"
+              className="w-[30px]"
             />
           </li>
           <li>
@@ -46,7 +46,7 @@ const NavBar = () => {
               alt="Bookmark"
               width={30}
               height={30}
-              className="w-[35px]"
+              className="w-[30px]"
             />
           </li>
           <li>
@@ -55,7 +55,7 @@ const NavBar = () => {
               alt="Ruqyah"
               width={30}
               height={30}
-              className="w-[35px]"
+              className="w-[30px]"
             />
           </li>
           <li>
@@ -64,7 +64,7 @@ const NavBar = () => {
               alt="qanda"
               width={30}
               height={30}
-              className="w-[35px]"
+              className="w-[30px]"
             />
           </li>
           <li>
@@ -73,7 +73,7 @@ const NavBar = () => {
               alt="Book"
               width={30}
               height={30}
-              className="w-[35px]"
+              className="w-[30px]"
             />
           </li>
         </ul>
