@@ -25,10 +25,6 @@ const Category = ({ category, activeId, setActiveId }) => {
 
   return (
     <div
-      onClick={(e) => {
-        e.preventDefault(); // Prevent navigation
-        toggleAccordion();
-      }}
       className="rounded-lg mb-4"
     >
       <div
