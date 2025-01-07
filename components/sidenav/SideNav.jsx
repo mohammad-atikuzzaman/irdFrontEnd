@@ -10,7 +10,7 @@ const SideNav = () => {
   const [activeId, setActiveId] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:4000/categories?q=${query}`)
+    fetch(`https://irdserverside.vercel.app/categories?q=${query}`)
       .then((res) => res.json())
       .then((data) => {
         setCategories(data);

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const SubCategories = ({ catId }) => {
   const [subCategories, setSubCategories] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:4000/subcategories/${catId}`)
+    fetch(`https://irdserverside.vercel.app/subcategories/${catId}`)
       .then((res) => res.json())
       .then((data) => setSubCategories(data));
   }, [catId]);
