@@ -28,7 +28,7 @@ const DuaCard = ({ post, sl }) => {
     audio,
   } = post;
   return (
-    <article className="rounded-xl text-sm space-y-4 p-4 m-4 bg-white">
+    <article id={dua_id} className="rounded-xl text-sm space-y-4 p-4 m-4 bg-white">
       <section className="flex items-center space-x-4">
         <Image src={titelImage} alt="dua image" />
         <h2 className="text-green-500 font-semibold">

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import DuaTitle from "./DuaTitle";
+import SubCategory from "./SubCategory";
 
 const SubCategories = ({ catId }) => {
   const [subCategories, setSubCategories] = useState([]);
@@ -13,8 +13,8 @@ const SubCategories = ({ catId }) => {
 
   return (
     <div className="border-l-2 border-dotted border-green-600 space-y-4 ml-4">
-      {subCategories?.map((subcategory) => (
-        <DuaTitle subcategory={subcategory} />
+      {subCategories?.map((subcategory, index) => (
+        <SubCategory key={index} subcategory={subcategory} />
       ))}
     </div>
   );
