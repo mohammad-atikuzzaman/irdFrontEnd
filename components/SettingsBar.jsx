@@ -16,7 +16,7 @@ const SettingsBar = () => {
       <button onClick={()=> setMobileSetting(!mobileSetting)} className="fixed right-0 bg-green-600 p-2 m-2 rounded-md mx-4 top-0 block lg:hidden">
       <Settings />
       </button>
-      <aside className="hidden lg:block bg-white m-4 p-4 min-w-[20%] rounded-xl min-h-[70vh] sticky top-[6rem] space-y-4">
+      <aside className="hidden lg:block bg-white m-4 p-4 min-w-[20%] rounded-xl min-h-[80vh] sticky top-[6rem] space-y-4">
         <button className="bg-gray-100  px-2 py-1 flex items-center w-full gap-2 leading-4 text-xs text-gray-400 font-medium rounded-lg">
           <Image
             src={language}
