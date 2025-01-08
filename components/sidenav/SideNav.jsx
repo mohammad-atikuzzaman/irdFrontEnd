@@ -28,7 +28,7 @@ const SideNav = () => {
       >
         <Menu />
       </button>
-      <aside className="min-w-[25%] bg-white  m-4 rounded-xl overflow-hidden hidden lg:flex flex-col h-[70vh] sticky top-[6rem]">
+      <aside className="w-[25%] bg-white  m-4 rounded-xl overflow-hidden hidden lg:flex flex-col h-[70vh] sticky top-[6rem]">
         <h2 className="p-4 bg-green-600 text-white text-center">Categories</h2>
         <section className="w-full flex items-center justify-center">
           <input

@@ -3,7 +3,7 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <aside className="ml-4 hidden">
+    <aside className="w-[5%] ml-4 hidden lg:block">
       <nav className="bg-white p-4 sticky top-8 min-h-[80vh] space-y-16 rounded-lg flex flex-col items-center">
         <Image
           src="/logo.png"

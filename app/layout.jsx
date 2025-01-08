@@ -26,11 +26,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`bg-[#E2E2E2] container flex`}>
         <NavBar />
-        <div>
+        <div className="w-[90%]">
           <Header />
           <main className="flex">
             <SideNav />
-            <div className="w-full min-h-screen overflow-y-auto custom-scroll mt-14 lg:mt-4">
+            <div className="w-[70%] min-h-screen overflow-y-auto custom-scroll mt-14 lg:mt-4">
               {children}
             </div>
             <SettingsBar />
