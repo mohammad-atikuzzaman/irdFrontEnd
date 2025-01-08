@@ -21,14 +21,14 @@ const SideNav = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
 
   return (
-    <>
+    <div className="w-[30%] h-screen">
       <button
         onClick={() => setMobileMenu(!mobileMenu)}
         className="fixed p-2 bg-green-600 m-2 mx-4 rounded-md block md:hidden"
       >
         <Menu />
       </button>
-      <aside className="w-[25%] bg-white  m-4 rounded-xl overflow-hidden hidden lg:flex flex-col h-[70vh] sticky top-[6rem]">
+      <aside className=" bg-white  m-4 rounded-xl overflow-hidden hidden lg:flex flex-col h-[70vh] sticky top-[6rem]">
         <h2 className="p-4 bg-green-600 text-white text-center">Categories</h2>
         <section className="w-full flex items-center justify-center">
           <input
@@ -54,7 +54,7 @@ const SideNav = () => {
         </nav>
       </aside>
       {mobileMenu && (
-        <aside className="w-[70%] bg-emerald-200 min-h-screen  m-4 rounded-xl overflow-hidden flex flex-col fixed top-10">
+        <aside className="w-[70%] bg-emerald-200 h-screen  m-4 rounded-xl overflow-hidden flex flex-col fixed top-10">
           <h2 className="p-4 bg-green-600 text-white text-center">
             Categories
           </h2>
@@ -82,7 +82,7 @@ const SideNav = () => {
           </nav>
         </aside>
       )}
-    </>
+    </div>
   );
 };
 

@@ -28,9 +28,9 @@ export default function RootLayout({ children }) {
         <NavBar />
         <div className="w-[90%]">
           <Header />
-          <main className="flex">
+          <main className="flex justify-around">
             <SideNav />
-            <div className="w-[70%] min-h-screen overflow-y-auto custom-scroll mt-14 lg:mt-4">
+            <div className="lg:w-[70%] min-h-screen overflow-y-auto custom-scroll mt-14 lg:mt-4">
               {children}
             </div>
             <SettingsBar />
