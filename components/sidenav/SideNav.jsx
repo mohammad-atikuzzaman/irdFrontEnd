@@ -21,7 +21,7 @@ const SideNav = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
 
   return (
-    <div className="w-[30%] h-screen">
+    <div className="w-[30%]">
       <button
         onClick={() => setMobileMenu(!mobileMenu)}
         className="fixed p-2 bg-green-600 m-2 mx-4 rounded-md block md:hidden"
@@ -54,7 +54,7 @@ const SideNav = () => {
         </nav>
       </aside>
       {mobileMenu && (
-        <aside className="w-[70%] bg-emerald-200 h-screen  m-4 rounded-xl overflow-hidden flex flex-col fixed top-10">
+        <aside className="w-[70%] bg-emerald-200 h-screen  m-4 rounded-xl overflow-hidden flex flex-col fixed top-10 lg:hidden">
           <h2 className="p-4 bg-green-600 text-white text-center">
             Categories
           </h2>
