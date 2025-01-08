@@ -24,15 +24,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#E2E2E2] flex`}
-      >
+      <body className={`bg-[#E2E2E2] container flex`}>
         <NavBar />
         <div>
           <Header />
           <main className="flex">
             <SideNav />
-            <div className="min-h-screen overflow-y-auto custom-scroll mt-4">{children}</div>
+            <div className="w-full min-h-screen overflow-y-auto custom-scroll mt-14 lg:mt-4">
+              {children}
+            </div>
             <SettingsBar />
           </main>
         </div>
